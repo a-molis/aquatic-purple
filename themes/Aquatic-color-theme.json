@@ -4,6 +4,7 @@
 	"colors": {
 		"editor.background": "#1d1d26",
 		"editor.foreground": "#C9C9D1",
+		"editor.lineHighlightBorder": "#1d1d26",
 		"activityBarBadge.background": "#2c2c3b",
 		"sideBarTitle.foreground": "#bbbbbb",
 		"sideBar.background": "#2c2c3b",
@@ -64,18 +65,27 @@
 			"name": "Keyword",
 			"scope": [
 				"keyword",
-				"punctuation.definition.directive.cpp"
+				"punctuation.definition.directive.cpp",
+				"storage.modifier"
 			],
 			"settings": {
 				"foreground": "#2FB260"
 			}
 		},
 		{
+			"name": "Keyword Operator",
+			"scope": [
+				"keyword.operator"
+			],
+			"settings": {
+				"foreground": "#C9C9D1"
+			}
+		},
+		{
 			"name": "Storage",
 			"scope": [
 				"storage",
-				"storage.type",
-				"storage.modifier"
+				"storage.type"
 			],
 			"settings": {
 				"foreground": "#94558D"
@@ -92,14 +102,12 @@
 			"name": "Operator, Misc",
 			"scope": [
 				"meta.tag",
-				"punctuation",
 				"punctuation.definition.tag",
 				"punctuation.separator.inheritance.php",
 				"punctuation.definition.tag.html",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html",
-				"punctuation.section.embedded",
-				"keyword.operator"
+				"punctuation.section.embedded"
 			],
 			"settings": {
 				"foreground": "#C9C9D1"
@@ -154,7 +162,6 @@
 				"support.constant",
 				"constant.character",
 				"constant.escape",
-				"variable.parameter",
 				"keyword.other.unit",
 				"keyword.other"
 			],
@@ -175,7 +182,7 @@
 			"name": "Number",
 			"scope": "constant.numeric",
 			"settings": {
-				"foreground": "#94558D"
+				"foreground": "#608bba"
 			}
 		},
 		{
